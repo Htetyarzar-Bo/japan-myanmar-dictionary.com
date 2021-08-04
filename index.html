@@ -11,15 +11,11 @@
 <body>
     <div id="navbar">
         <a href="#"  class="menu-bars" id="show-menu"><i class="fas fa-bars"></i></a>
-        
         <p>Minna no Nihon-Go </p>
-       
-       
     </div>
    
-   
     <!---------------------------------------------------------------------->
-    <nav class="flex">
+<nav class="flex">
        
     <div id="nav-menu">
         <ul class="nav-menu-items">
@@ -31,7 +27,7 @@
             <div class="scroll">
                 <hr/>
                 <div class="nav-section">
-                <li class="nav-text"><a href="index.html.html">Lesson 1</a></li>
+                <li class="nav-text"><a href="index.html">Lesson 1</a></li>
                 <li class="nav-text"><a href="DictionaryJlesson2.html">Lesson 2</a></li>
                 <li class="nav-text"><a href="DictionaryJlesson3.html">Lesson 3</a></li>
                 <li class="nav-text"><a href="#">Lesson 4</a></li>
@@ -57,7 +53,7 @@
                 <li class="nav-text"><a href="#">Lesson 24</a></li>
                 <li class="nav-text"><a href="#">Lesson 25</a></li>
                 <li class="nav-text"><a href="DictionaryJAlllesson2.html">All Lessons</a></li>
-                <li class="nav-text"><a href="#"></a></li>
+              
                 </div>
             </div>
         </ul>
@@ -65,7 +61,7 @@
     <!----------------------------------------------------------------------------->
     <div class="vocabulary">
         <div class="header">
-        <h1>All Lessons</h1>
+            <h1>Lesson 1 </h1>
         </div>
     
         <div class="wrapper">
@@ -79,14 +75,17 @@
             <!-------------- search list ----------------->
             <div class="word">
                 <div class="inputtype">
-                <input type="text" id="search"  value=" "  placeholder="search...">
+                <!-- <input type="text" id="search" onfocus="this.value='' " value=" " placeholder="search...">-->
+                <!--onfocus="this.value='' " က cursorချတာနဲ့ အရင်ကစာ ပျောက်အောင် -->
+                <input type="text" id="search"  value=""  placeholder="search...">
 
-                <button  onclick="document.getElementById('search').value = ''" ><i class="fas fa-times"></i></button>
+                <button onclick="document.getElementById('search').value = ''" ><i class="fas fa-times"></i></button>
                 
                <!-- <button onclick="search()">Search</button>-->
                
-                </div>
-                <div class="result">
+            </div>
+                <!-- ------------input type---------------  -->
+            <div class="result">
                 <h2 id="word_text"></h2>
                 <p id="yomi_text"></p>
                 <hr>
@@ -94,15 +93,17 @@
                 <li id="means_text"></li>
             </div>
         </div>
+
         <div class="profile">
             <p class="design">Design <span>By</span></p>
             <img src="Htet Yarzar Bo passport.jpg" alt="Htet Yarzar Bo">
             <p>Khun Htet <span>Yarzar bo</span></p>
         </div>
+
     </div>
-    </div>
+    
 </nav>
-<script src="AlllessonVocal.js"></script>
+<script src="lesson1Vocal.js"></script>
     <script src="DictionaryJ.js">
 
     </script>
